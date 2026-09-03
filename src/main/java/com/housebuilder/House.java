@@ -20,4 +20,32 @@ public class House {
         this.hasGarden = hasGarden;
     }
 
+    public int getWindows() {
+        return windows;
+    }
+
+    public int getDoors() {
+        return doors;
+    }
+
+    public int getRooms() {
+        return rooms;
+    }
+
+    public boolean hasGarage() {
+        return hasGarage;
+    }
+
+    public boolean hasSwimmingPool() {
+        return hasSwimmingPool;
+    }
+
+    public boolean hasStatues() {
+        return hasStatues;
+    }
+
+    public boolean hasGarden() {
+        return hasGarden;
+    }
+
 }
