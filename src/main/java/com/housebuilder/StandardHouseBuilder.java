@@ -54,7 +54,19 @@ public class StandardHouseBuilder implements HouseBuilder {
 
     @Override
     public House build() {
-        return new House(windows, doors, rooms, hasGarage, hasSwimmingPool, hasStatues, hasGarden);
+        House house = new House(windows, doors, rooms, hasGarage, hasSwimmingPool, hasStatues, hasGarden);
+        reset();
+        return house;
+    }
+
+    private void reset() {
+        this.windows = 0;
+        this.doors = 0;
+        this.rooms = 0;
+        this.hasGarage = false;
+        this.hasSwimmingPool = false;
+        this.hasStatues = false;
+        this.hasGarden = false;
     }
 
 }
